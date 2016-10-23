@@ -22,11 +22,11 @@ public class ControllerHelper
 		ArrayList<Class<?>> controllerClasses = ClassHelper.getControllerClasses();
 		if (CollectionUtil.isNotEmpty(controllerClasses))
 		{
-			initRequestMapp(controllerClasses);
+			initRequestMap(controllerClasses);
 		}
 	}
 
-	private static void initRequestMapp(ArrayList<Class<?>> controllerClasses)
+	private static void initRequestMap(ArrayList<Class<?>> controllerClasses)
 	{
 		for (Class<?> controllerClass : controllerClasses)
 		{

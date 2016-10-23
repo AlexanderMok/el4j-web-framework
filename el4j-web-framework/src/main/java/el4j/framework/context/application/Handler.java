@@ -18,12 +18,12 @@ public class Handler
 		this.method = method;
 	}
 
-	public Class<?> getControllerClass()
+	public synchronized Class<?> getControllerClass()
 	{
 		return controllerClass;
 	}
 
-	public Method getMethod()
+	public synchronized Method getMethod()
 	{
 		return method;
 	}
